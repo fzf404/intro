@@ -1,0 +1,8 @@
+/* 新增按钮颜色 */
+#new:after {
+  background-color: rgba(255, 32, 128, 0.4);
+}
+/* 修改按钮颜色 */
+#update:after {
+  background-color: rgba(128, 32, 255, 0.4);
+}

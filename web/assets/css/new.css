@@ -1,0 +1,81 @@
+a {
+  /* 宽度 */
+  width      : 100%;
+  font-size  : 1.4em;
+  line-height: 2.2em;
+  /* 文字居中对齐 */
+  text-align : center;
+
+}
+
+a:after {
+  /* 圆角大小 */
+  border-radius: 2em;
+}
+
+
+input,
+textarea {
+  /* 字体 */
+  font-family: monospace;
+
+  font-size: 1.4em;
+  padding  : 0.2em;
+  max-width: 600px;
+
+}
+
+textarea {
+
+  margin-bottom: 1em;
+
+}
+
+label {
+
+  /* 显示类型 */
+  display      : inline-block;
+
+  font-size  : 1.4em;
+  /* 字体粗细 */
+  font-weight: 300;
+  /* 行高 */
+  line-height: 1.6em;
+
+  /* 最小宽度 */
+  min-width    : 62px;
+  /* 底部距离 */
+  margin: .5em 0;
+
+}
+
+.textarea-label {
+  /* 垂直对齐 */
+  vertical-align: top;
+}
+
+#choice {
+  /* a标签居中对齐 */
+  text-align: center;
+  /* 最大宽度 */
+  max-width : 450px;
+}
+
+#submit:after {
+  /* 提交按钮颜色 */
+  background-color: rgba(128, 32, 255, 0.4);
+}
+
+/* 移动端优化 */
+@media only screen and (max-width:700px) {
+  
+  input,
+  textarea {
+    max-width: 80vw;
+  }
+
+  #choice {
+    max-width: 80vw;
+  }
+
+}

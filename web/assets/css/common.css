@@ -1,0 +1,88 @@
+body {
+  /* 内边距 */
+  padding: 10vh 10vw;
+}
+
+h1 {
+  /* 文字大小 */
+  font-size    : 3em;
+  /* 底边距 */
+  margin-bottom: .8em;
+}
+
+h2 {
+  font-size    : 2em;
+  margin-bottom: 1.4em;
+}
+
+p {
+  font-size  : 1.4em;
+  /* 字体粗细 */
+  font-weight: 300;
+  /* 行高 */
+  line-height: 1.6em;
+  /* 最大宽度 */
+  max-width  : 600px;
+}
+
+
+a {
+  /* 盒模型 */
+  display : inline-block;
+  /* 相对当前位置定位 */
+  position: relative;
+
+  /* 字体颜色 */
+  color          : #121314;
+  /* 不展示下划线 */
+  text-decoration: none;
+
+  /* 外边距 */
+  margin: .4em 1.4em .6em .4em;
+
+  /* 最大宽度 */
+  max-width: 100px;
+}
+
+span {
+  display: inline-block;
+}
+
+/* 伪元素 */
+a:after {
+  content : '';
+  position: absolute;
+  z-index : -1;
+
+  top   : 60%;
+  left  : -0.4em;
+  right : -0.4em;
+  bottom: 0;
+
+  border-radius: .4em;
+
+  transition      : top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: rgba(30, 144, 255, .4);
+}
+
+/* 伪类修改伪元素 */
+a:hover:after {
+  top: 0%;
+}
+
+#load {
+  display: none;
+}
+
+#back {
+  float: right;
+}
+
+/* 移动端优化 */
+@media only screen and (max-width:700px) {
+
+  p {
+    max-width: 80vw;
+  }
+  
+}
