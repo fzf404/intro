@@ -155,7 +155,7 @@ password:12345678
 
 说明：用于更新用户的自我介绍
 
-参数：`Content-Type: application/x-www-form-urlencoded`
+参数：`Content-Type: application/json`
 
 | 参数名   | 类型   | 必须 | 说明           |
 | -------- | ------ | ---- | -------------- |
