@@ -6,17 +6,17 @@
  */
 
 // 从浏览器中读取信息
-let data = window.localStorage.getItem('intro');
+let data = window.localStorage.getItem("intro");
 
 if (data != null) {
   // 解析为object
-  data = JSON.parse(data)
+  data = JSON.parse(data);
   // 设置储存的输入信息
-  $('form [name="id"]').val(data.id)
-  $('form [name="name"]').val(data.name)
-  $(`form [name="sex"][value=${data.sex}]`).attr("checked",true)
-  $('form [name="intro"]').val(data.intro)
-  $('form [name="about"]').val(data.about)
+  $('form [name="id"]').val(data.id);
+  $('form [name="name"]').val(data.name);
+  $(`form [name="sex"][value=${data.sex}]`).attr("checked", true);
+  $('form [name="intro"]').val(data.intro);
+  $('form [name="about"]').val(data.about);
 }
 
 $("#submit").click(function () {
@@ -27,27 +27,26 @@ $("#submit").click(function () {
     sex: $('form [name="sex"]:checked').val(),
     intro: $('form [name="intro"]').val(),
     about: $('form [name="about"]').val(),
-  }
+  };
 
   // 存储 object
-  window.localStorage.setItem('intro', JSON.stringify(data));
+  window.localStorage.setItem("intro", JSON.stringify(data));
 
   // 加入密码
-  data["password"] = $('form [name="password"]').val()
+  data["password"] = $('form [name="password"]').val();
 
-  $.post(`${base_url}/new`, data,
+  $.post(
+    `${base_url}/new`,
+    data,
 
     function (json) {
-
       // 成功处理
       if (json.code == 200) {
-        window.location.href = `intro.html?id=${data.id}`
+        window.location.href = `intro.html?id=${data.id}`;
       }
 
       // 错误代码处理
-      handle_code(json)
-
-    }).fail(
-      () => handle_fail()
-    )
+      handle_code(json);
+    }
+  ).fail(() => handle_fail());
 });

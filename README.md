@@ -1,6 +1,6 @@
 ## 介绍
 
-> 琴理工作室2021通识课结课项目
+> 琴理工作室 2021 通识课结课项目
 
 ### 使用技术
 
@@ -47,8 +47,8 @@
 
 1. 增加用户
 
-    - `end/allow.csv`：允许用户列表
-    - `end/data.csv`：全部用户列表
+   - `end/allow.csv`：允许用户列表
+   - `end/data.csv`：全部用户列表
 
 2. 部署
 
@@ -60,10 +60,10 @@ pip3 install -r requires.txt
 
 # 启动后端
 cd end
-# 方式一 
+# 方式一
 # 使用 gevent.pywsgi 部署
 nohup python3 app.py &
-# 方式二 
+# 方式二
 # 使用 gunicorn 部署
 apt install gunicorn -y
 # -b :端口 文件名:变量名

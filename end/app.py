@@ -1,7 +1,7 @@
 '''
 Author: fzf404
 Date: 2021-10-12 21:56:02
-LastEditTime: 2021-10-25 16:42:04
+LastEditTime: 2021-11-25 14:54:50
 Description: 自我介绍后端
 '''
 
@@ -272,6 +272,6 @@ def update():
 # 开启服务
 # app.run('0.0.0.0', port=8080)
 # app.run('0.0.0.0', port=8080, threaded=False)
-if __name__ == '__main__':                                                                               
+if __name__ == '__main__':
     server = pywsgi.WSGIServer(('0.0.0.0', 8080), app)
     server.serve_forever()

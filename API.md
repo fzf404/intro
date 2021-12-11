@@ -28,12 +28,12 @@ curl http://127.0.0.1:8080/api/total
 
 ```json
 {
-    "code": 200,
-    "data": {
-        "12306": "王山而",
-        "2010020115": "孟祥瑞"
-    },
-    "msg": "Ok"
+  "code": 200,
+  "data": {
+    "12306": "王山而",
+    "2010020115": "孟祥瑞"
+  },
+  "msg": "Ok"
 }
 ```
 
@@ -61,12 +61,12 @@ curl http://127.0.0.1:8080/api/total
 
 data:
 
-| 参数名 | 类型   | 说明           |
-| ------ | ------ | -------------- |
-| name   | string | 姓名           |
-| sex    | bool   | 性别（0男1女） |
-| intro  | string | 介绍           |
-| about  | string | 爱好           |
+| 参数名 | 类型   | 说明              |
+| ------ | ------ | ----------------- |
+| name   | string | 姓名              |
+| sex    | bool   | 性别（0 男 1 女） |
+| intro  | string | 介绍              |
+| about  | string | 爱好              |
 
 请求示例：
 
@@ -78,14 +78,14 @@ curl http://127.0.0.1:8080/api/intro?id=12306 | python -m json.tool
 
 ```json
 {
-    "code": 200,
-    "data": {
-        "about": "身体健康，大脑健全，审美良好，抗压能力强。啥都不会，进去想学东西的，emmmm没了。",
-        "intro": "大一学生，就读于沈阳理工大学艺术设计专业。",
-        "name": "王山而",
-        "sex": 1
-    },
-    "msg": "Ok"
+  "code": 200,
+  "data": {
+    "about": "身体健康，大脑健全，审美良好，抗压能力强。啥都不会，进去想学东西的，emmmm没了。",
+    "intro": "大一学生，就读于沈阳理工大学艺术设计专业。",
+    "name": "王山而",
+    "sex": 1
+  },
+  "msg": "Ok"
 }
 ```
 
@@ -97,16 +97,16 @@ curl http://127.0.0.1:8080/api/intro?id=12306 | python -m json.tool
 
 说明：用于增加新用户的自我介绍
 
-参数：`Content-Type: application/x-www-form-urlencoded`
+参数：`Content-Type: application/x-www-form-urlencoded`
 
-| 参数名   | 类型   | 必须 | 说明           |
-| -------- | ------ | ---- | -------------- |
-| id       | int    | 是   | 学号           |
-| name     | string | 是   | 姓名           |
-| sex      | bool   | 是   | 性别（0男1女） |
-| intro    | string | 是   | 介绍           |
-| about    | string | 是   | 爱好           |
-| password | string | 是   | 设置密码       |
+| 参数名   | 类型   | 必须 | 说明              |
+| -------- | ------ | ---- | ----------------- |
+| id       | int    | 是   | 学号              |
+| name     | string | 是   | 姓名              |
+| sex      | bool   | 是   | 性别（0 男 1 女） |
+| intro    | string | 是   | 介绍              |
+| about    | string | 是   | 爱好              |
+| password | string | 是   | 设置密码          |
 
 返回值：
 
@@ -138,12 +138,12 @@ password:12345678
 
 ```json
 {
-    "code": 200,
-    "data": {
-        "id": "2010020116",
-        "name": "王山而"
-    },
-    "msg": "Ok"
+  "code": 200,
+  "data": {
+    "id": "2010020116",
+    "name": "王山而"
+  },
+  "msg": "Ok"
 }
 ```
 
@@ -155,16 +155,16 @@ password:12345678
 
 说明：用于更新用户的自我介绍
 
-参数：`Content-Type: application/json`
+参数：`Content-Type: application/json`
 
-| 参数名   | 类型   | 必须 | 说明           |
-| -------- | ------ | ---- | -------------- |
-| id       | int    | 是   | 学号           |
-| name     | string | 是   | 姓名           |
-| sex      | int    | 是   | 性别（0男1女） |
-| intro    | string | 是   | 介绍           |
-| about    | string | 是   | 关于           |
-| password | string | 是   | 密码           |
+| 参数名   | 类型   | 必须 | 说明              |
+| -------- | ------ | ---- | ----------------- |
+| id       | int    | 是   | 学号              |
+| name     | string | 是   | 姓名              |
+| sex      | int    | 是   | 性别（0 男 1 女） |
+| intro    | string | 是   | 介绍              |
+| about    | string | 是   | 关于              |
+| password | string | 是   | 密码              |
 
 返回值：
 
@@ -198,11 +198,11 @@ data：
 
 ```json
 {
-    "code": 200,
-    "data": {
-        "id": "2010020116",
-        "name": "王山而"
-    },
-    "msg": "Ok"
+  "code": 200,
+  "data": {
+    "id": "2010020116",
+    "name": "王山而"
+  },
+  "msg": "Ok"
 }
 ```
