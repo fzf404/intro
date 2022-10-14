@@ -1,7 +1,8 @@
 ## 介绍
 
-> 琴理工作室 2021 通识课结课项目
-
+> 琴理工作室 2021 通识课项目
+> 
+> [视频](https://www.bilibili.com/video/BV1kL4y1B7s5) & [教案](https://share.fzf404.art/通识课) & [预览](https://intro.fzf404.art/)
 ### 使用技术
 
 - 前端：HTML、CSS、jQuery
