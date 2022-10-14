@@ -1,17 +1,16 @@
 '''
 Author: fzf404
 Date: 2021-10-12 21:56:02
-LastEditTime: 2021-11-25 14:54:50
+LastEditTime: 2022-10-14 22:04:04
 Description: 自我介绍后端
 '''
 
 import csv
 from time import sleep
-from flask_cors import *
+
 from flask import Flask, request
-
+from flask_cors import *
 from gevent import pywsgi
-
 
 # 新建服务
 app = Flask("intro")
@@ -147,7 +146,7 @@ def new():
     for item in allow_raw:
         id_tmp = item[0]
         name_tmp = item[1]
-        if(id == id_tmp and name == name_tmp):
+        if (id == id_tmp and name == name_tmp):
             allow = True
             break
 
