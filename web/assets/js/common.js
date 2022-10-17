@@ -1,12 +1,12 @@
 /*
  * @Author: fzf404
  * @Date: 2021-10-11 14:40:04
- * @LastEditTime: 2022-10-14 21:56:34
+ * @LastEditTime: 2021-10-28 18:19:59
  * @Description: 通用代码
  */
 
 const base_url = `api` // mock地址
-// const base_url = `http://${document.domain}:8080/api`; // 后端地址
+// const base_url = `http://${document.domain}:8080/api`  // 后端地址
 
 // 响应代码处理
 const handle_code = (json) => {

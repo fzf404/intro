@@ -1,7 +1,7 @@
 /*
  * @Author: fzf404
  * @Date: 2021-10-10 21:34:19
- * @LastEditTime: 2022-10-14 22:03:18
+ * @LastEditTime: 2021-10-27 23:59:55
  * @Description: 自我介绍详情
  */
 
@@ -27,9 +27,8 @@ $.get(`${base_url}/intro?id=${url_params.get('id')}`, function (json) {
   $('#intro').text(json.data.intro)
   $('#about').text(json.data.about)
 
-  // 0 为女生，1 为男生
-  console.log(json.data.sex)
-  if (json.data.sex == 1) {
+  // 0为女生，1为男生
+  if (json.data.sex == '1') {
     $('#sex').text('👦')
   } else {
     $('#sex').text('👧')

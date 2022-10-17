@@ -1,66 +1,78 @@
 <!--
  * @Author: fzf404
  * @Date: 2021-10-11 20:07:24
- * @LastEditTime: 2022-10-14 22:04:44
+ * @LastEditTime: 2023-05-07 19:01:14
  * @Description: 新建自我介绍页
 -->
 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>自我介绍 | 新建</title>
-    <link rel="stylesheet" href="assets/css/common.css" />
-    <link rel="stylesheet" href="assets/css/new.css" />
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
+<html lang="zh-CN">
 
-  <body>
-    <h1>增加 📙</h1>
+<head>
+  <meta charset="UTF-8">
+  <title>自我介绍 | 新建</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/new.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-    <h2>Add a <span>自我介绍</span> 🆕</h2>
+<body>
 
-    <form>
-      <label>学号</label>
-      <input type="text" name="id" placeholder="你的学号" autofocus required />
+  <h1>增加 📙</h1>
 
-      <br />
+  <h2>
+    Add a <span>自我介绍</span> 🆕
+  </h2>
 
-      <label>姓名</label>
-      <input type="text" name="name" placeholder="你的姓名" required />
+  <form>
 
-      <br />
+    <label>学号</label>
+    <input type="text" name="id" placeholder="你的学号" autofocus required>
 
-      <label>密码</label>
-      <input type="text" name="password" placeholder="设置密码" required />
+    <br>
 
-      <br />
+    <label>姓名</label>
+    <input type="text" name="name" placeholder="你的姓名" required>
 
-      <label>性别</label>
-      <input type="radio" name="sex" value="0" required />
-      <label>👦</label>
-      <input type="radio" name="sex" value="1" required />
-      <label>👧</label>
+    <br>
 
-      <br />
+    <label>密码</label>
+    <input type="text" name="password" placeholder="设置密码" required>
 
-      <label class="textarea-label">介绍</label>
-      <textarea name="intro" rows="2" cols="36" placeholder="自己的基本情况" required></textarea>
+    <br>
 
-      <br />
+    <label>性别</label>
+    <input type="radio" name="sex" value="0" required>
+    <label>👦</label>
+    <input type="radio" name="sex" value="1" required>
+    <label>👧</label>
 
-      <label class="textarea-label">爱好</label>
-      <textarea name="about" rows="4" cols="36" placeholder="自己平时的爱好" required></textarea>
+    <br>
 
-      <div id="choice">
-        <a id="submit"> 提交 </a>
-        <a href="index.html"> 返回 </a>
-      </div>
-    </form>
+    <label class="textarea-label">介绍</label>
+    <textarea name="intro" rows="2" cols="36" placeholder="自己的基本情况" required></textarea>
 
-    <script src="assets/js/common.js"></script>
-    <script src="assets/js/new.js"></script>
-  </body>
+    <br>
+
+    <label class="textarea-label">爱好</label>
+    <textarea name="about" rows="4" cols="36" placeholder="自己平时的爱好" required></textarea>
+
+    <div id="choice">
+      <a id="submit">
+        提交
+      </a>
+      <a href="index.html">
+        返回
+      </a>
+    </div>
+
+  </form>
+
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/new.js"></script>
+
+</body>
+
 </html>

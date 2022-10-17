@@ -1,7 +1,7 @@
 /*
  * @Author: fzf404
  * @Date: 2021-10-14 16:27:31
- * @LastEditTime: 2022-10-14 21:57:20
+ * @LastEditTime: 2021-10-27 18:14:43
  * @Description: 更新列表
  */
 
@@ -25,7 +25,7 @@ $('#submit').click(function () {
     name: $('form [name="name"]').val(),
     sex: $('form [name="sex"]:checked').val(),
     intro: $('form [name="intro"]').val(),
-    about: $('form [name="about"]').val(),
+    about: $('form [name="about"]').val()
   }
 
   // 存储至本地
@@ -53,6 +53,6 @@ $('#submit').click(function () {
       handle_code(json)
     },
     // 失败处理
-    error: () => handle_fail(),
+    error: () => handle_fail()
   })
 })
