@@ -2,7 +2,7 @@
 
 > 琴理工作室 2021 通识课项目
 >
-> [视频](https://www.bilibili.com/video/BV1kL4y1B7s5) & [教案](https://share.fzf404.art/通识课) & [预览](https://demo.fzf404.art/intro/web)
+> [视频](https://www.bilibili.com/video/BV1kL4y1B7s5) & [教案](https://share.fzf404.art/) & [预览](https://demo.fzf404.art/intro/web)
 
 ### 使用技术
 
